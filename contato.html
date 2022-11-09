@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Contato</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="caixa">
+			<h1>
+				<img src="imagens/logo-branco.png" alt="logo">
+			</h1>
+
+			<nav>
+				<ul>
+					<li> <a href="index.html"> Home </a> </li>
+					<li> <a href="produtos.html"> Produtos </a> </li>
+					<li> <a href="contato.html"> Contato </a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<form>
+			<label for="nome_sobrenome">Nome e Sobrenome</label>
+			<input type="text" id="nome_sobrenome" class="input-padrão" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrão">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="tefone" class="input-padrão">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea id="mensagem" cols="70" rows="10" class="input-padrão"></textarea>
+
+			<fieldset>
+				<legend>Como prefere o nosso contato?</legend>
+
+				<label for="radio-email" class="radio">
+					<input type="radio" id="radio-email" name="radio" value="email" checked>
+					Email
+				</label>
+
+				<label for="radio-whatsapp" class="radio">
+					<input type="radio" id="radio-whatsapp" name="radio" value="whatsapp">
+					Whatsapp
+				</label>
+
+				<label for="radio-telefone" class="radio">
+					<input type="radio" id="radio-telefone" name="radio" value="telefone">
+					Telefone
+				</label>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+
+			<br>
+			<label>
+				<input type="checkbox" name="" value="" placeholder="">
+				Gostaria de receber novidades pelo email?
+			</label>
+			<br>
+
+			<button type="submit">Enviar</button>
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Dia</th>
+					<th>Horario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Segunda</td>
+					<td>08:00 - 20:00</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>08:00 - 20:00</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>08:00 - 20:00</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer>
+		<img src="imagens/logo-branco.png">
+		<p class="copy">&copy Copyright Barbearia Alura – 2019</p>
+	</footer>
+	
+</body>
+</html>
